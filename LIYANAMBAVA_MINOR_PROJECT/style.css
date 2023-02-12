@@ -1,0 +1,131 @@
+.introbox {
+    position: relative;
+    /*text-align: center;*/
+  }
+  
+  .intro {
+    position: absolute;
+    top: 130px;
+    left: 460px;
+    color: rgb(51, 62, 62);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10ch;
+  }
+  
+  .name {
+    position: absolute;
+    bottom: 125px;
+    left: 370px;
+    color: rgb(51, 62, 62);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 11ch;
+  }
+
+  .about {
+    position: absolute;
+    top: 0px;
+    /*left: 1060px;*/
+    left:550px;
+    color: rgb(51, 62, 62);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 3ch;
+  }
+
+  .contact {
+    position: absolute;
+    top: 0px;
+    /*left: 1150px;*/
+    left: 650px;
+    color: rgb(51, 62, 62);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 3ch;
+  }
+
+#aboutsec{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5ch;
+    color: rgb(51, 62, 62);
+    text-align: center;
+    padding-top: 10px;
+}
+
+#aboutcontent{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5ch;
+    color: rgb(51, 62, 62);
+    text-align: left;
+    padding-top: 0px;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  
+  img {
+    padding-left: 20px;
+    border-radius: 50%;
+    height: 80%;
+    max-width: 100%
+  }
+  
+  .image {
+    flex-basis: 40%
+  }
+  
+  .text {
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 20px;
+    font-size: 2.4ch;
+  }
+
+
+#email {
+    position: absolute;
+    left: 150px;
+    color: rgb(51, 62, 62);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 2.3ch;
+  }
+
+  #linkedin {
+    position: absolute;
+    left: 600px;
+    color: rgb(51, 62, 62);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 2.3ch;
+  }
+
+  #instagram {
+    position: absolute;
+    left: 1050px;
+    color: rgb(51, 62, 62);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 2.3ch;
+  }
+
+  .top {
+    --offset: 50px; 
+  
+    position: sticky;
+    bottom: 20px;      
+    margin-right: 10px; 
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+  
+    /* visual styling */
+    text-decoration: none;
+    padding: 10px;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    background: #598ca7;
+    border-radius: 100px;
+    white-space: nowrap;
+  }
+  
+  p {
+    font-size: 25px;
+  }
