@@ -1,0 +1,165 @@
+.le-rever{
+    position: absolute;
+    top: 140px;
+    left: 110px;
+    color: rgb(0, 0, 0);
+    font-family: 'Italiana', serif;
+    font-size: 13ch;
+    line-height: 1.9ch;
+    animation: slide-up-1 2s;
+}
+
+.myname{
+    position: absolute;
+    top: 350px;
+    left: 115px;
+    color: rgb(0, 0, 0);
+    font-family: 'Italiana', serif;
+    font-size: 3ch;
+    line-height: 1.9ch;
+    animation: slide-up-2 2s;
+}
+
+.bgimage{
+    animation: slide-down-img 2s;
+    margin-top: 5%;
+
+}
+
+@keyframes slide-up-1 {
+    from{
+        opacity: 0.1;
+        line-height: 200px;
+    }
+    to{
+        opacity: 1;
+        line-height: 96px;
+    }
+}
+
+@keyframes slide-up-2 {
+    from{
+        opacity: 0.1;
+        line-height: 300px;
+    }
+    to{
+        opacity: 1;
+        line-height: 23px;
+    }
+}
+
+@keyframes slide-down-img {
+    from{
+        margin-top: 4%;
+        opacity: 0;
+    }
+    to{
+        margin-top: 5%;
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    from{
+        opacity: 0; 
+    }
+    to{
+        opacity: 1; 
+    }
+}
+
+#home{
+    position: absolute;
+    top: 2px;
+    left:100px;
+    color: rgb(51, 62, 62);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 3ch;
+    animation: fade-in 2s;
+}
+
+#products{
+    position: absolute;
+    top: 2px;
+    left:430px;
+    color: rgb(51, 62, 62);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 3ch;
+    animation: fade-in 2s;
+}
+
+#contact{
+    position: absolute;
+    top: 2px;
+    left:760px;
+    color: rgb(51, 62, 62);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 3ch;
+    animation: fade-in 2s;
+}
+
+.btn{
+    color: rgb(51, 62, 62);
+    background-color: white;
+}
+
+#prods{
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 43%;
+    font-family: 'Italiana', serif;
+    font-size: 4.5ch;
+    color: rgb(51, 62, 62);
+}
+
+#prada{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    text-align: center;
+    padding-top: 16%;
+}
+
+#dolce{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    text-align: center;
+    padding-top: 5%;
+}
+
+#chanel{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.show-cart li {
+    display: flex;
+  }
+
+  #email {
+    position: absolute;
+    left: 150px;
+    color: rgb(51, 62, 62);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 2.3ch;
+  }
+
+  #linkedin {
+    position: absolute;
+    left: 600px;
+    color: rgb(51, 62, 62);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 2.3ch;
+  }
+
+  #instagram {
+    position: absolute;
+    left: 1050px;
+    color: rgb(51, 62, 62);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 2.3ch;
+  }

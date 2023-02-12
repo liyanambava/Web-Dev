@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" style="--vh:5.69px; height: 2240px; width: 1263px;">
+    <head>
+        <meta charset="utf-18">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width">
+        <title>Le Rêver</title>
+        <script src="cartcode.js"></script>
+        
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+        </script>
+    
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+        </script>
+        <style>
+            html{scroll-behavior: smooth;}
+            .content {
+                position: absolute;
+            }
+            #right-panel-link {
+                position: absolute;
+                top: 12px;
+                right:100px;
+                animation: fade-in 2s;
+            }
+            .btn-xl{
+                /*padding: 10px;*/
+                font-size: 23px;
+                /*border-radius: 10px;*/
+            }
+
+            @keyframes fade-in {
+                from{
+                    opacity: 0; 
+                }
+                to{
+                    opacity: 1; 
+                }
+            }
+        </style>
+    </head>
+
+    <body style="background-color: #ffffff;">
+        <header id="header">
+            <h3 id="home"><a href="" style="color: rgb(51, 62, 62); text-decoration: none;">Home</a></h3>
+            <h3 id="products"><a href="#prods" style="color: rgb(51, 62, 62); text-decoration: none;">Products</a></h3>
+            <h3 id="contact"><a href="#break-line" style="color: rgb(51, 62, 62); text-decoration: none;">Contact</a></h3>
+            <button type="button" class="btn pull-right btn-xl" data-toggle="modal" data-target="#cart" style="font-family: 'Times New Roman', Times, serif;" id="right-panel-link">Cart(<span class="total-count">0</span>)</button>
+        </header>
+
+
+        <div class="mainpage">
+            <div class="bgimage">
+                <img id="introimg" src="image1-2.jpg" alt="img not found" style="width: 97%; height: 100%;" >
+            </div>
+            <div class="mainhead">
+                <h1 class="le-rever">Le<br>Rêver</h1>
+                <h2 class="myname">By Liyana</h2>
+            </div>
+        </div>
+
+        <h2 id="prods">All Products</h2>
+        <div id="all-prods">
+            <div id="prada">
+                <div id="prada-left">
+                    <img src="prada-1.jpg" alt="Prada Candy Floral" width="300px" height="300px">
+                    <p id="prod-text">Prada Candy Floral<br>Rs. 6,840</p>
+                    <a href="#" data-name="Prada Candy Floral" data-price="6840" class="add-to-cart btn" style="color: rgb(51, 62, 62); text-decoration: none;"><span class="glyphicon glyphicon-shopping-cart"></span>
+                        <b> Add to Cart </b></a>
+                </div>
+        
+                <div id="prada-right">
+                    <img src="prada-2.jpg" alt="Prada Candy Sugar Pop" width="300px" height="300px">
+                    <p id="prod-text">Prada Candy Sugar Pop<br>Rs. 5,450</p>
+                    <a href="#" data-name="Prada Candy Sugar Pop" data-price="5450" class="add-to-cart btn" style="color: rgb(51, 62, 62); text-decoration: none;"><span class="glyphicon glyphicon-shopping-cart"></span>
+                        <b> Add to Cart </b></a>
+                </div>
+            </div>
+
+
+            <div id="dolce">
+                <div id="dolce-left">
+                    <img src="dolce-1.jpg" alt="D&G Light Blue Forever Pour Homme" width="300px" height="300px">
+                    <p id="prod-text">D&G Light Blue Forever Pour Homme<br>Rs. 6,050</p>
+                    <a href="#" data-name="D&G Light Blue Forever Pour Homme" data-price="6050" class="add-to-cart btn" style="color: rgb(51, 62, 62); text-decoration: none;"><span class="glyphicon glyphicon-shopping-cart"></span>
+                        <b> Add to Cart </b></a>
+                </div>
+
+                <div id="dolce-right">
+                    <img src="dolce-2.jpg" alt="D&G The Only One EDP for Women" width="300px" height="300px">
+                    <p id="prod-text">D&G The Only One EDP for Women<br>Rs. 4,450</p>
+                    <a href="#" data-name="D&G The Only One EDP for Women" data-price="4450" class="add-to-cart btn" style="color: rgb(51, 62, 62); text-decoration: none;"><span class="glyphicon glyphicon-shopping-cart"></span>
+                        <b> Add to Cart </b></a>
+                </div>
+            </div>
+
+
+            <div id="chanel">
+                <div id="chanel-left">
+                    <img src="chanel-1.jpg" alt="Chanel Coco Mademoiselle EDP for Women" width="300px" height="300px">
+                    <p id="prod-text">Chanel Coco Mademoiselle EDP for Women<br>Rs. 12,900</p>
+                    <a href="#" data-name="Chanel Coco Mademoiselle EDP for Women" data-price="12900" class="add-to-cart btn" style="color: rgb(51, 62, 62); text-decoration: none;"><span class="glyphicon glyphicon-shopping-cart"></span>
+                        <b> Add to Cart </b></a>
+                </div>
+
+                <div id="chanel-right">
+                    <img src="chanel-2.jpg" alt="Chanel Pour Monsieur" width="300px" height="300px">
+                    <p id="prod-text">Chanel Pour Monsieur<br>Rs. 10,400</p>
+                    <a href="#" data-name="Chanel Pour Monsieur" data-price="10400" class="add-to-cart btn" style="color: rgb(51, 62, 62); text-decoration: none;"><span class="glyphicon glyphicon-shopping-cart"></span>
+                        <b> Add to Cart </b></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <table class="show-cart table">
+                    
+                  </table>
+                  <div>Total price: Rs.<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Order now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div>
+            <br><hr id="break-line" style="width:100%; text-align:left; margin-left:0">
+            <h5 id="email"><a href="mailto: liyanambava@gmail.com" style="color: rgb(51, 62, 62); text-decoration: none;"><b>Email</b></a></h5>
+            <h5 id="linkedin"><a href="https://www.linkedin.com/in/liyana-m-bava-075150221/" style="color: rgb(51, 62, 62); text-decoration: none;"><b>Linkedin</b></a></h5>
+            <h5 id="instagram"><a href="https://www.instagram.com/lliyxnaa/" style="color: rgb(51, 62, 62); text-decoration: none;"><b>Instagram</b></a></h5>
+          </div>
+    </body>
+</html>
